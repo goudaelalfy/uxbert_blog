@@ -24,12 +24,19 @@ return [
 	'save' => 'Save',
 	'edit' => 'Edit',
 	'title' => 'Title',
+	'back' => 'Back',
+	'cancel' => 'Cancel',
+	'delete' => 'Delete',
 	'content' => 'Content',
 	'added_successfully' => 'Your post was added successfully',
 	'updated_successfully' => 'Your post was updated successfully',
-	'deleted_successfully' => 'Your post deleted successfully',
+	'deleted_successfully' => 'Your post was deleted successfully',
 	'delete_confirmation' => 'Are you sure you want delete this post?',
 	'login_to_add_edit_posts' => 'You must login to add, edit, or view your posts',
 	'read_more' => 'Read more',
 	'my_posts' => 'My Posts',
+	'delete_confirmation_message' => 'Are you sure you want to delete?',
+
+
+
 ];

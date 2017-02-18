@@ -52,6 +52,8 @@
 		                                 
 		                                @if(\Session::get('user_id'))
 			                                @if(\Session::get('user_id')==$post_row->user_id)
+			                                <a href="{{url('post/delete/'.$post_row->id)}}" onclick="return confirm('{{trans('post.delete_confirmation_message')}}')" class="dv_right a_link" >{{trans('post.delete')}}</a>
+			                                
 			                                <a href="{{url('post/'.$post_row->id.'/edit')}}" class="dv_right" >{{trans('post.edit')}}</a> 
 			                                @endif
 										@endif

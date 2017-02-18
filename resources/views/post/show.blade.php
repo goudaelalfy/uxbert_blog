@@ -49,13 +49,17 @@
 			                            	
 		                                </p>
 		                                <p class=" button"> 
-		                                    <h3> {{trans('post.posted_by')}}: {{$post->user->first_name}} {{$post->user->last_name}}
+		                                    <h3> {{trans('post.posted_by')}}: {{$post->user->first_name}} {{$post->user->last_name}}</h3>
+		                                    
+		                                    <a href="javascript:void(0)" onclick="goBack();" class="dv_right a_link" >{{trans('post.back')}}</a>
+		                                    
 		                                    @if(\Session::get('user_id'))
 				                                @if(\Session::get('user_id')==$post->user_id)
-				                                <a href="{{url('post/'.$post->id.'/edit')}}" class="dv_right" >{{trans('post.edit')}}</a> 
+				                                <a href="{{url('post/delete/'.$post->id)}}" onclick="return confirm('{{trans('post.delete_confirmation_message')}}')" class="dv_right a_link" >{{trans('post.delete')}}</a>
+				                                <a href="{{url('post/'.$post->id.'/edit')}}"  class="dv_right" >{{trans('post.edit')}}</a>
 				                                @endif
 											@endif
-		                                    <h3>  
+		                                    
 										</p>
 			                        </div>									
 			                    </div>

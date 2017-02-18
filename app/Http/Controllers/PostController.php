@@ -170,6 +170,13 @@ class PostController extends MyController
 	 */
 	public function destroy($id)
 	{
-		//
+		if(\Session::get('user_id')) {
+			Post::destroy($id);
+			Session::flash('success_message', trans('post.deleted_successfully'));
+			return redirect('post/userPosts');
+		} else {
+			Session::flash('error_message', trans('post.login_to_add_edit_posts'));
+			return redirect('user/login');
+		}
 	}
 }

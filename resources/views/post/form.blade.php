@@ -64,8 +64,9 @@
                                 </p>
                                 <p class=" button"> 
                                     <input type="submit" value="{{trans('post.save')}}" />  
-								</p>
+									<a href="javascript:void(0)" onclick="goBack();" class="dv_right" >{{trans('post.cancel')}}</a>
                                 
+								</p>
                                 
                             {!! Form::close() !!}
                         </div>

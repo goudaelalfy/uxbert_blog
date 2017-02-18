@@ -28,6 +28,8 @@
         <link rel="stylesheet" type="text/css" href="{{url('css/demo.css')}}" />
         <link rel="stylesheet" type="text/css" href="{{url('css/style.css')}}" />
 		<link rel="stylesheet" type="text/css" href="{{url('css/animate-custom.css')}}" />
+		
+		<script src="{{url('js/common.js')}}"></script>
     </head>
     <body>
     <div class="container">

@@ -23,6 +23,7 @@ Route::get('user/resetPassword/{remember_token}', 'UserController@resetPassword'
 Route::post('user/updatePassword', 'UserController@updatePassword');
 
 
+Route::get('post/delete/{id}', 'PostController@destroy');
 Route::get('post/userPosts', 'PostController@userPosts');
 /*
  * If you're using Route::resource it will only generate routes for the index, 
